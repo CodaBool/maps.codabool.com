@@ -3,7 +3,7 @@ import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
 export const metadata = {
-  title: 'Maps in CyberSpace',
+  title: 'CyberSpace',
   description: 'A collection of maps ready to go for VTT',
 }
 
