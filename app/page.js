@@ -116,7 +116,7 @@ export default function Home() {
                   <li><a href="https://newtbb.netlify.app/" target="_blank">Newt</a></li>
                   <li><a href="https://www.alienmobius.com/" target="_blank">Mobius</a></li>
                   <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex</a></li>
-                  <li><a href="https://map.weylandyutani.company/dist/" className="text-destructive">claydegruchy</a> (starmap is broken at the moment)</li>
+                  {/* <li><a href="https://map.weylandyutani.company/dist/" className="text-destructive">claydegruchy</a> (starmap is broken at the moment)</li> */}
                 </ul>
               </AccordionContent>
             </AccordionItem>
@@ -125,15 +125,17 @@ export default function Home() {
               <AccordionContent>
                 <p className="text-center text-ring">Check out my other projects</p>
                 <ul className="leading-10 text-center">
-                  <li><a href="https://foundryvtt.com/packages/terminal" className="text-ring" target="_blank">Terminal</a> (coming soon)</li>
-                  <li><a href="https://foundryvtt.com/packages/transit" className="text-ring" target="_blank">Transit</a> (coming soon)</li>
+                  <li>Terminal (coming soon)</li>
+                  <li>Transit (coming soon)</li>
+                  {/* <li><a href="https://foundryvtt.com/packages/terminal" className="text-ring" target="_blank">Terminal</a> (coming soon)</li>
+                  <li><a href="https://foundryvtt.com/packages/transit" className="text-ring" target="_blank">Transit</a> (coming soon)</li> */}
                 </ul>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>How to use</AccordionTrigger>
               <AccordionContent>
-                <p className="text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="" className="text-primary text-bold" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
+                <p className="text-xl text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="https://github.com/CodaBool/maps-in-cyberspace" className="text-primary text-bold" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
