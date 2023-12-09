@@ -85,7 +85,7 @@ export default function Home() {
               <SelectContent>
                 <SelectItem value="all">All</SelectItem>
                 <SelectItem value="elevator">Elevator</SelectItem>
-                <SelectItem value="multifloor">Multifloor</SelectItem>
+                <SelectItem value="multi-level">Multi-Level</SelectItem>
                 <SelectItem value="vehicle">Vehicle</SelectItem>
                 <SelectItem value="hangar">Hangar</SelectItem>
               </SelectContent>
