@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <Toaster />
         {children}
         <footer className="bottom-0 w-full p-8">
-          <p className="text-center text-muted">Original art was made by <a href="http://travellerrpgblog.blogspot.com/">Robert Pearce</a> & packaged by <a href="http://gurpsland.no-ip.org/geomorphs/">Eric Smith</a>. Licensed under CC BY-NC 4.0</p>
+          <p className="text-center text-ring">Original art was made by <a href="http://travellerrpgblog.blogspot.com/">Robert Pearce</a> & packaged by <a href="http://gurpsland.no-ip.org/geomorphs/">Eric Smith</a>. Licensed under CC BY-NC 4.0</p>
         </footer>
       </body>
     </html>
