@@ -135,7 +135,7 @@ export default function Home() {
             <AccordionItem value="item-3">
               <AccordionTrigger>How to use</AccordionTrigger>
               <AccordionContent>
-                <p className="text-xl text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="https://github.com/CodaBool/maps-in-cyberspace" className="text-primary text-bold" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
+                <p className="text-xl text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="https://codabool.itch.io/maps-in-cyberspace" className="text-primary text-bold" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
