@@ -71,7 +71,7 @@ export const images = [
   { id: "E117-1", title: "Lab Complex", size: "large", dimension: "100x100" },
   { id: "E531-1", title: "Bar Lower", size: "small", dimension: "50x50", tags: ["multi-level"] },
   { id: "E532-1", title: "Bar Upper", size: "small", dimension: "50x50", tags: ["multi-level"] },
-  { id: "E757-1", title: "Command", size: "large", dimension: "100x100" },
+  { id: "E757-1", title: "Command", size: "large", dimension: "100x100", tags: ["elevator"] },
   { id: "E760-1", title: "Bridge", size: "small", dimension: "50x50" },
   { id: "E773-1", title: "Engines", size: "large", dimension: "100x100" },
   { id: "E776-1", title: "Bridge", size: "large", dimension: "100x100" },
