@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Copy, Frown } from "lucide-react"
+import { Copy } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 import {
@@ -125,8 +125,8 @@ export default function Home() {
               <AccordionContent>
                 <p className="text-center text-ring">Check out my other projects</p>
                 <ul className="leading-10 text-center">
-                  <li>Terminal (coming soon)</li>
-                  <li>Transit (coming soon)</li>
+                  <li className="animate-[changeColor_2s_ease-in-out_infinite,wiggle_2s_ease-in-out_infinite]"><a href="https://codabool.itch.io/terminal/" target="_blank">Terminal</a></li>
+                  <li className="text-ring">Transit (coming soon)</li>
                   {/* <li><a href="https://foundryvtt.com/packages/terminal" className="text-ring" target="_blank">Terminal</a> (coming soon)</li>
                   <li><a href="https://foundryvtt.com/packages/transit" className="text-ring" target="_blank">Transit</a> (coming soon)</li> */}
                 </ul>

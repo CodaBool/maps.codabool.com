@@ -42,3 +42,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes wiggle {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+@keyframes changeColor {
+  0% { color: #fff; }
+  50% { color: #e4f4ff; }
+  100% { color: #fff; }
+}
