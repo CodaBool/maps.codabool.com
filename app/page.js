@@ -90,6 +90,7 @@ export default function Home() {
                 <SelectItem value="hangar">Hangar</SelectItem>
                 <SelectItem value="bay">Vehicle Bay</SelectItem>
                 <SelectItem value="destructable">Destructable</SelectItem>
+                <SelectItem value="prop">prop</SelectItem>
               </SelectContent>
             </Select>
           </div>
