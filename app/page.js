@@ -153,7 +153,7 @@ export default function Home() {
               <CardContent style={{height: "450px"}}>
                 <Dialog>
                   <DialogTrigger>
-                    <Image src={`/${image.id}.png`} width={400} height={400} priority={index < 10} alt={image.id} quality={40} className="cursor-pointer max-h-[400px]" />
+                    <Image src={`/${image.id}.png`} width={400} height={400} priority={index < 10} alt={image.id} quality={40} className="cursor-pointer max-h-[400px] object-contain" />
                   </DialogTrigger>
                   <DialogContent className="w-[90vw] h-[90vh] max-w-[90vw]">
                     <DialogHeader>
