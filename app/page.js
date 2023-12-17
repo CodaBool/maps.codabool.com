@@ -88,6 +88,8 @@ export default function Home() {
                 <SelectItem value="multi-level">Multi-Level</SelectItem>
                 <SelectItem value="vehicle">Vehicle</SelectItem>
                 <SelectItem value="hangar">Hangar</SelectItem>
+                <SelectItem value="bay">Vehicle Bay</SelectItem>
+                <SelectItem value="destructable">Destructable</SelectItem>
               </SelectContent>
             </Select>
           </div>
