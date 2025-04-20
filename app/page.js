@@ -114,7 +114,7 @@ export default function Home() {
             <AccordionItem value="item-1">
               <AccordionTrigger>Alien RPG</AccordionTrigger>
               <AccordionContent>
-                <p className="text-center text-ring">Check out these other creators</p>
+                <p className="text-center text-ring">Other Creators</p>
                 <ul className="leading-10 text-center">
                         <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou</a> (variety)</li>
                         <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar</a> (map)</li>
