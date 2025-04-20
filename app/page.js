@@ -112,9 +112,11 @@ export default function Home() {
         <div className="container mx-auto  sm:w-[50%] w-full">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Alien RPG</AccordionTrigger>
+              <AccordionTrigger>Other Creators</AccordionTrigger>
               <AccordionContent>
-                <p className="text-center text-ring">Other Creators</p>
+                    <div className="text-center text-sm text-gray-400 italic mb-4">
+                        "Talk is cheap. Show me the code." ― Linus
+                      </div>
                 <ul className="leading-10 text-center">
                         <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou</a> (variety)</li>
                         <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar</a> (map)</li>
