@@ -116,9 +116,16 @@ export default function Home() {
               <AccordionContent>
                 <p className="text-center text-ring">Check out these other creators</p>
                 <ul className="leading-10 text-center">
-                  <li><a href="https://newtbb.netlify.app/" target="_blank">Newt</a></li>
-                  <li><a href="https://www.alienmobius.com/" target="_blank">Mobius</a></li>
-                  <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex</a></li>
+                        <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou</a> (variety)</li>
+                        <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar</a> (map)</li>
+                        <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
+                        <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka</a> (city roads)</li>
+                        <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">newt</a> (map)</li>
+                        <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius</a> (variety)</li>
+                        <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold</a> (planet)</li>
+                        <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org</a> (ships)</li>
+                        <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex</a> (character)</li>
+
                   {/* <li><a href="https://map.weylandyutani.company/dist/" className="text-destructive">claydegruchy</a> (starmap is broken at the moment)</li> */}
                 </ul>
               </AccordionContent>
