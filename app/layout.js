@@ -1,5 +1,4 @@
 import { Toaster } from '@/components/ui/toaster'
-// import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
 export const metadata = {

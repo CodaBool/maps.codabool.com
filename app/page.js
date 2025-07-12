@@ -118,16 +118,18 @@ export default function Home() {
                 "Talk is cheap. Show me the code." ― Linus
               </div>
               <ul className="leading-10 text-center">
-                <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou</a> (variety)</li>
-                <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar</a> (map)</li>
+                <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou (variety)</a></li>
+                <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar (map)</a></li>
                 <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
-                <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka</a> (city roads)</li>
-                <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">newt</a> (map)</li>
-                <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay D</a> (Alien Map)</li>
-                <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius</a> (variety)</li>
-                <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold</a> (planet)</li>
-                <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org</a> (ships)</li>
-                <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex</a> (character)</li>
+                <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka (city roads)</a></li>
+                <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">newt (map)</a></li>
+                <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay D (Alien Map)</a></li>
+                <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius (variety)</a></li>
+                <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold (planet)</a></li>
+                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">Matt Umland (planet)</a></li>
+                <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org (ships)</a></li>
+                <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex (character)</a></li>
+                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">rolegenerator.com</a></li>
 
                 {/* <li><a href="https://map.weylandyutani.company/dist/" className="text-destructive">claydegruchy</a> (starmap is broken at the moment)</li> */}
               </ul>
@@ -146,7 +148,7 @@ export default function Home() {
           <AccordionItem value="item-3">
             <AccordionTrigger>How to use</AccordionTrigger>
             <AccordionContent>
-              <p className="text-xl text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="https://codabool.itch.io/maps-in-cyberspace" className="text-primary text-bold" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
+              <p className="text-xl text-center text-ring">This content is intended to be a companion app for a Foundry compendium. If you are using Foundry download the compendium first. It is called <a href="https://codabool.itch.io/maps-in-cyberspace" className="text-bold text-blue-300" target="_blank">Maps in CyberSpace</a> and can be downloaded for <span className="text-primary text-bold">free</span>. All walls and in some cases lighting have been added to the maps.</p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
