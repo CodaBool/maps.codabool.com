@@ -119,19 +119,17 @@ export default function Home() {
               </div>
               <ul className="leading-10 text-center">
                 <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou (variety)</a></li>
+                <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius (variety)</a></li>
                 <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar (map)</a></li>
-                <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
-                <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka (city roads)</a></li>
                 <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">newt (map)</a></li>
                 <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay D (Alien Map)</a></li>
-                <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius (variety)</a></li>
+                <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka (city roads)</a></li>
+                <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
                 <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold (planet)</a></li>
-                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">Matt Umland (planet)</a></li>
+                <li><a href="https://anodyneprintware.com/planets" target="_blank">Matt Umland (planet)</a></li>
+                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">rolegenerator.com (ships)</a></li>
                 <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org (ships)</a></li>
                 <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex (character)</a></li>
-                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">rolegenerator.com</a></li>
-
-                {/* <li><a href="https://map.weylandyutani.company/dist/" className="text-destructive">claydegruchy</a> (starmap is broken at the moment)</li> */}
               </ul>
             </AccordionContent>
           </AccordionItem>
