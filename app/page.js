@@ -121,8 +121,8 @@ export default function Home() {
                 <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou (variety)</a></li>
                 <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius (variety)</a></li>
                 <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar (map)</a></li>
-                <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">newt (map)</a></li>
-                <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay D (Alien Map)</a></li>
+                <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">Delacannon (map)</a></li>
+                <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay DeGrunchy (Alien Map)</a></li>
                 <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka (city roads)</a></li>
                 <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
                 <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold (planet)</a></li>
