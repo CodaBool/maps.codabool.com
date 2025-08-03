@@ -129,7 +129,8 @@ export default function Home() {
                 <li><a href="https://anodyneprintware.com/planets" target="_blank">Matt Umland (planet)</a></li>
                 <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">rolegenerator.com (ships)</a></li>
                 <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org (ships)</a></li>
-                <li><a href="http://game-mother.com/tools.html" target="_blank">Artifex (character)</a></li>
+                <li><a href="https://game-mother.com/tools.html" target="_blank">Artifex (character)</a></li>
+                <li><a href="https://www.samcodes.co.uk/project/markov-namegen/" target="_blank">Sam Twidale (names)</a></li>
               </ul>
             </AccordionContent>
           </AccordionItem>
