@@ -117,21 +117,93 @@ export default function Home() {
               <div className="text-center text-sm text-gray-400 italic mb-4">
                 "Talk is cheap. Show me the code." ― Linus
               </div>
-              <ul className="leading-10 text-center">
-                <li><a href="https://watabou.github.io/" target="_blank" rel="noopener noreferrer">watabou (variety)</a></li>
-                <li><a href="https://sites.google.com/view/alienmobius-resources" target="_blank" rel="noopener noreferrer">mobius (variety)</a></li>
-                <li><a href="https://azgaar.github.io" target="_blank" rel="noopener noreferrer">azgaar (map)</a></li>
-                <li><a href="https://newtbb.netlify.app/" target="_blank" rel="noopener noreferrer">Delacannon (map)</a></li>
-                <li><a href="https://map.weylandyutani.company/" target="_blank" rel="noopener noreferrer">Clay DeGrunchy (Alien Map)</a></li>
-                <li><a href="https://anvaka.github.io/city-roads" target="_blank" rel="noopener noreferrer">anvaka (city roads)</a></li>
-                <li><a href="https://donjon.bin.sh/alien/system" target="_blank" rel="noopener noreferrer">donjon (solar system)</a></li>
-                <li><a href="https://deep-fold.itch.io/pixel-planet-generator" target="_blank" rel="noopener noreferrer">deep-fold (planet)</a></li>
-                <li><a href="https://anodyneprintware.com/planets" target="_blank">Matt Umland (planet)</a></li>
-                <li><a href="https://www.rolegenerator.com/en/module/spaceship" target="_blank">rolegenerator.com (ships)</a></li>
-                <li><a href="https://rpggamer.org/main.php?page=cec-designer/cec-designer.php" target="_blank" rel="noopener noreferrer">rpggamer.org (ships)</a></li>
-                <li><a href="https://game-mother.com/tools.html" target="_blank">Artifex (character)</a></li>
-                <li><a href="https://www.samcodes.co.uk/project/markov-namegen/" target="_blank">Sam Twidale (names)</a></li>
-              </ul>
+
+                {sections.map((section) => (
+                  <div
+                    key={section.key}
+                    className="rounded-2xl border bg-background/40 p-4 shadow-sm my-4"
+                  >
+                    {/* Section header */}
+                    <div className="mb-4 flex items-start justify-between gap-3">
+                      <div className="text-sm font-semibold tracking-tight">{section.title}</div>
+                    </div>
+
+                    {/* Main section items */}
+                    {section.items?.length ? (
+                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                        {section.items.map((it) => (
+                          <div
+                              key={it.href}
+                            className="group flex items-center justify-between gap-3 rounded-xl border bg-background/30 px-3 py-2 text-sm transition hover:bg-accent hover:text-accent-foreground"
+                          >
+                            <div className="min-w-0">
+                              <div className="truncate font-medium">{it.title}</div>
+                              <div className="truncate text-xs text-muted-foreground group-hover:text-accent-foreground/80">
+                                {it.note}
+                              </div>
+                            </div>
+
+                            {it.additionalLink && (
+                              <a href={it.additionalLink} target="_blank" className="shrink-0 rounded-lg border bg-background/40 px-2 py-1 text-[11px] text-muted-foreground transition group-hover:bg-background/20 group-hover:text-accent-foreground/90 text-xs">
+                                {it.additionalLinkDesc} ↗
+                              </a>
+                            )}
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={it.href}
+
+                            >
+                            <span className="shrink-0 rounded-lg border bg-background/40 px-2 py-1 text-[11px] text-muted-foreground transition cursor-pointer group-hover:bg-background/20 group-hover:text-accent-foreground/90">
+                              ↗
+                                </span>
+                              </a>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+
+                    {/* Subsections (Map -> region/solar/jump/hex/station, etc.) */}
+                    {section.subSections?.length ? (
+                      <div className="mt-5 space-y-5">
+                        {section.subSections.map((sub) => (
+                          <div key={sub.key}>
+                            <div className="mb-2 flex items-center gap-3">
+                              <div className="text-xs font-semibold tracking-wide text-muted-foreground">
+                                {sub.title.toUpperCase()}
+                              </div>
+                              <div className="h-px flex-1 bg-border" />
+                            </div>
+
+                            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                              {sub.items.map((it) => (
+                                <a
+                                  key={it.href}
+                                  href={it.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group flex items-center justify-between gap-3 rounded-xl border bg-background/30 px-3 py-2 text-sm transition hover:bg-accent hover:text-accent-foreground"
+                                >
+                                  <div className="min-w-0">
+                                    <div className="truncate font-medium">{it.title}</div>
+                                    {it.note ? (
+                                      <div className="truncate text-xs text-muted-foreground group-hover:text-accent-foreground/80">
+                                        {it.note}
+                                      </div>
+                                    ) : null}
+                                  </div>
+                                  <span className="shrink-0 rounded-lg border bg-background/40 px-2 py-1 text-[11px] text-muted-foreground transition group-hover:bg-background/20 group-hover:text-accent-foreground/90">
+                                    ↗
+                                  </span>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                ))}
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -182,3 +254,207 @@ export default function Home() {
     </main>
   )
 }
+
+
+
+const sections = [
+  {
+    key: "general",
+    title: "General",
+    items: [
+      {
+        href: "https://www.samcodes.co.uk/project/markov-namegen/",
+        title: "Sam Twidale",
+        note: "Uses Markov Chains to generate names",
+      },
+    ],
+  },
+  {
+    key: "quickGen",
+    title: "Quick Start",
+    subSections: [
+
+      {
+        key: "planet",
+        title: "Space",
+        items: [
+          {
+            href: "https://anodyneprintware.com/planets",
+            title: "Matt Umland",
+            note: "planet encounter",
+          },
+          {
+            href: "https://donjon.bin.sh/alien/system",
+            title: "donjon alien system",
+            note: "Solar system generator",
+          },
+        ],
+      },
+      {
+        key: "ship",
+        title: "Ship",
+        items: [
+          {
+            href: "https://www.rolegenerator.com/en/module/spaceship",
+            title: "RoleGenerator",
+            note: "Random Ship",
+          },
+
+          {
+            href: "https://pecios.netlify.app",
+            title: "Delacannon",
+            note: "node map",
+          },
+        ],
+      },
+      {
+        key: "encounters",
+        title: "Map",
+        items: [
+
+          {
+            href: "https://sectorswithoutnumber.com",
+            title: "mpigsley",
+            note: "hex map",
+          },
+        ],
+      },
+
+
+
+    ],
+  },
+
+  {
+    key: "create",
+    title: "Create",
+    items: [],
+    subSections: [
+      {
+        key: "map-region",
+        title: "Region",
+        items: [
+          {
+            href: "https://azgaar.github.io",
+            title: "Azgaar",
+            note: "Customizable Region Map",
+          },
+        ],
+      },
+      {
+        key: "map-city",
+        title: "City",
+        items: [
+          {
+            href: "https://anvaka.github.io/city-roads",
+            title: "anvaka",
+            note: "City roads",
+          },
+          {
+            href: "https://probabletrain.itch.io/city-generator",
+            title: "ProbableTrain",
+            note: "City roads",
+          },
+        ],
+      },
+      {
+        key: "planet",
+        title: "Planet",
+        items: [
+          {
+            href: "https://deep-fold.itch.io/pixel-planet-generator",
+            title: "deep fold",
+            note: "Pixel planet gif creator",
+          },
+        ],
+      },
+      {
+        key: "map",
+        title: "Map",
+        items: [
+          {
+            href: "https://newtbb.netlify.app",
+            title: "Delacannon",
+            note: "Create a deck plan",
+          },
+        ],
+      },
+      {
+        key: "variety",
+        title: "Variety",
+        items: [
+          {
+            href: "https://watabou.github.io/",
+            title: "Watabou",
+            note: "Region, City, Village, Cave/Glade, Dungeon, Dwelling",
+          },
+        ],
+      },
+      {
+        key: "ships",
+        title: "Ships",
+        items: [
+          {
+            href: "https://rpggamer.org/main.php?page=cec-designer/cec-designer.php",
+            title: "rpggamer.org",
+            note: "ship builder",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    key: "mothership",
+    title: "Mothership",
+    items: [
+      {
+        href: "https://mothership-cockpit.netlify.app",
+        title: "Oliver",
+        note: "Resource Hub",
+      },
+      {
+        href: "https://tools.dicedatalore.com/into-the-motherverse",
+        title: "DiceDataLore",
+        note: "Jump Map",
+      },
+      {
+        href: "https://foundryvtt.com/packages/mothership-crew-relationships",
+        title: "Eddie Dover",
+        additionalLink: "https://github.com/EddieDover/mothership-crew-relationships/blob/master/src/lang/en.json",
+        additionalLinkDesc: "Roll Table Link",
+        note: "Player Relationships",
+      },
+      {
+        href: "https://github.com/EddieDover/mothership-interactive-terminal",
+        title: "Eddie Dover",
+        note: "Terminal (coming soon)",
+      },
+      {
+        href: "https://eddiedover.github.io/mothership-map-viewer/",
+        title: "Eddie Dover",
+        additionalLink: "https://foundryvtt.com/packages/mothership-map-viewer",
+        additionalLinkDesc: "Foundry Package",
+        note: "Map Creator",
+      },
+    ],
+  },
+
+  {
+    key: "alienrpg",
+    title: "Alien RPG",
+    items: [
+      {
+        href: "https://sites.google.com/view/alienmobius-resources",
+        title: "Mobius",
+        note: "Resource Hub",
+      },
+      {
+        href: "https://field.ludicrpg.com/alien-rpg/maps",
+        title: "Ludic RPG maps",
+        note: "Immersive deck plan map",
+      },
+
+    ],
+  },
+]
