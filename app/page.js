@@ -212,7 +212,7 @@ export default function Home() {
               <p className="text-center text-ring">Check out my other projects</p>
               <ul className="leading-10 text-center">
                 <li className="animate-[changeColor_2s_ease-in-out_infinite,wiggle_2s_ease-in-out_infinite]"><a href="https://codabool.itch.io/terminal/" target="_blank">Terminal</a></li>
-                <li className="text-ring"><a href="https://codabool.itch.io/stargazer" target="_blank">Stargazer</a></li>
+                <li className="animate-[changeColor_2s_ease-in-out_infinite,wiggle_2s_ease-in-out_infinite]"><a href="https://codabool.itch.io/stargazer" target="_blank">Stargazer</a></li>
               </ul>
             </AccordionContent>
           </AccordionItem>
@@ -234,13 +234,13 @@ export default function Home() {
             <CardContent style={{ height: "450px" }}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={`/${image.id}.png`} width={400} height={400} priority={index < 10} alt={image.id} quality={40} className="cursor-pointer max-h-[400px] object-contain" />
+                  <Image src={`/${image.id}.png`} width={400} height={400} unoptimized priority={index < 10} alt={image.id} quality={40} className="cursor-pointer max-h-[400px] max-w-[400px] object-contain" />
                 </DialogTrigger>
                 <DialogContent className="w-[90vw] h-[90vh] max-w-[90vw]">
                   <DialogHeader>
                     <DialogTitle>{image.title}<span className="m-10 text-ring">{image.size}</span></DialogTitle>
                     <Button variant="secondary" className="z-10 w-40 cursor-pointer" onClick={() => copyId(image.id)} style={{ marginTop: "10px" }}><Copy className="w-4 h-4 mr-2" />Copy</Button>
-                    <Image src={`/${image.id}.png`} fill alt="img" className="object-contain" />
+                    <Image src={`/${image.id}.png`} fill alt="img" unoptimized className="object-contain" />
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
